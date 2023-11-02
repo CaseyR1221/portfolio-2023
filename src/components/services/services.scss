@@ -35,6 +35,10 @@
         width: 300px;
       }
     }
+
+    .brand-text {
+      color: #05F0C5;
+    }
   }
   .titleContainer {
     flex: 2;
@@ -70,7 +74,7 @@
       }
 
       h1 {
-        font-size: 96px;
+        font-size: 84px;
         font-weight: 100;
 
         @include mobile {
@@ -82,7 +86,7 @@
         width: 300px;
         height: 100px;
         border-radius: 50px;
-        background-color: orange;
+        background-color: #05F0C5;
         border: none;
         font-size: 24px;
         cursor: pointer;
@@ -100,6 +104,7 @@
     display: flex;
     max-width: 1366px;
     margin: auto;
+    padding-bottom: 2rem;
 
     @include mobile {
       flex-direction: column;
@@ -108,7 +113,7 @@
 
     .box {
       padding: 50px;
-      border: 0.5px solid gray;
+      border: 1px solid #05F0C5;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -128,15 +133,15 @@
 
       button {
         padding: 10px;
-        background-color: orange;
+        background-color: #05F0C5;
         border: none;
         cursor: pointer;
 
         @include mobile {
           background-color: transparent;
-          border: 1px solid orange;
+          border: 1px solid #05F0C5;
           border-radius: 5px;
-          color: orange;
+          color: #05F0C5;
           width: 50%;
           padding: 5px;
         }

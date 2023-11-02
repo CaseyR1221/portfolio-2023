@@ -17,9 +17,13 @@
       font-size: 24px;
     }
 
+    h1 {
+      color: #05F0C5;
+    }
+
     .progressBar {
       height: 10px;
-      background-color: white;
+      background-color: #05F0C5;
     }
   }
 
@@ -95,7 +99,7 @@
         }
 
         button {
-          background-color: orange;
+          background-color: #05F0C5;
           border: none;
           border-radius: 10px;
           padding: 10px;

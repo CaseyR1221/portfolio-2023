@@ -34,8 +34,7 @@ const Services = () => {
     >
       <motion.div className="textContainer" variants={variants}>
         <p>
-          I focus on helping your brand grow
-          <br /> and move forward
+          Dedicated To Helping <span className="brand-text">Your Brand</span> Grow
         </p>
         <hr />
       </motion.div>
@@ -43,14 +42,17 @@ const Services = () => {
         <div className="title">
           <img src="/people.webp" alt="" />
           <h1>
-            <motion.b whileHover={{color:"orange"}}>Unique</motion.b> Ideas
+            <motion.b whileHover={{color:"#05F0C5"}}>Dedicated</motion.b> To
           </h1>
         </div>
         <div className="title">
           <h1>
-            <motion.b whileHover={{color:"orange"}}>For Your</motion.b> Business.
+            <motion.b whileHover={{color:"#05F0C5"}}>Your</motion.b> Business.
           </h1>
-          <button>WHAT WE DO?</button>
+          <button>
+            <a href="#Contact">CONTACT ME</a>
+
+          </button>
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>

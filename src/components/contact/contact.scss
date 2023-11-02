@@ -11,7 +11,7 @@
   @include mobile {
     width: 100%;
     padding: 10px;
-    flex-direction: column;
+    display: block;
   }
 
   .textContainer {
@@ -30,6 +30,7 @@
     h1 {
       font-size: 100px;
       line-height: 88px;
+      color: #05F0C5;
 
       @include mobile {
         font-size: 36px;
@@ -38,6 +39,10 @@
 
     span {
       font-weight: 300;
+    }
+
+    .email {
+      margin-bottom: 0.75rem;
     }
   }
 
@@ -52,7 +57,7 @@
 
 
     .phoneSvg {
-      stroke: orange;
+      stroke: #05F0C5;
       position: absolute;
       margin: auto;
       z-index: -1;
@@ -79,7 +84,8 @@
       button {
         padding: 20px;
         border: none;
-        background-color: orange;
+        border-radius: 5px;
+        background-color: #05F0C5;
         cursor: pointer;
         font-weight: 500;
         @include mobile {

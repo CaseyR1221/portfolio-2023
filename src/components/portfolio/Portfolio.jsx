@@ -84,7 +84,7 @@ const Portfolio = () => {
 };
 
 Single.propTypes = {
-  item: PropTypes.array
+  item: PropTypes.object
 }
 
 export default Portfolio;
