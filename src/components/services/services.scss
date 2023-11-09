@@ -6,6 +6,10 @@
   flex-direction: column;
   justify-content: space-between;
 
+  @include mobile {
+    justify-content: center;
+  }
+
   .textContainer {
     flex: 1;
     align-self: flex-end;
@@ -14,9 +18,10 @@
     gap: 20px;
 
     @include mobile {
-      align-self: center;
-      text-align: center;
-      flex-direction: column;
+      // align-self: center;
+      // text-align: center;
+      // flex-direction: column;
+      display: none;
     }
 
     p {
@@ -48,6 +53,7 @@
 
     @include mobile {
       width: 100%;
+      margin-top: 5rem;
     }
 
     .title {
@@ -84,7 +90,7 @@
 
       button {
         width: 300px;
-        height: 100px;
+        height: 75px;
         border-radius: 50px;
         background-color: #05F0C5;
         border: none;
@@ -92,9 +98,10 @@
         cursor: pointer;
 
         @include mobile {
-          font-size: 16px;
-          width: 150px;
-          height: 50px;
+          // font-size: 16px;
+          // width: 150px;
+          // height: 50px;
+          display: none;
         }
       }
     }
@@ -116,7 +123,7 @@
       border: 1px solid #05F0C5;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-start;
 
       @include mobile {
         border: none;
@@ -128,6 +135,14 @@
       p {
         @include mobile {
           display: none;
+        }
+      }
+
+      ul {
+        margin-top: 1rem;
+
+        @include mobile {
+          margin-top: 0rem;
         }
       }
 
@@ -145,6 +160,14 @@
           width: 50%;
           padding: 5px;
         }
+      }
+    }
+
+    .cms, .deployment {
+      display: block;
+
+      @include mobile {
+        display: none;
       }
     }
   }

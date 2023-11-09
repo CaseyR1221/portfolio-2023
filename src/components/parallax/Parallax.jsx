@@ -14,6 +14,17 @@ const Parallax = ({ type }) => {
   const yText = useTransform(scrollYProgress, [0, 1], ["0%", "500%"]);
   const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
+  const scrollVariants = {
+    scrollButton: {
+      opacity: 0,
+      y: 10,
+      transition: {
+        duration: 2.5,
+        repeat: Infinity,
+      },
+    },
+  };
+
   return (
     <div
       className="parallax"
@@ -25,9 +36,17 @@ const Parallax = ({ type }) => {
             : "linear-gradient(180deg, #111132, #505064)",
       }}
     >
-      <motion.h1 style={{ y: yText }}>
-        {type === "services" ? "What Can I Do?" : "What Have I Done?"}
-      </motion.h1>
+      <div className="textContainer">
+        <motion.h1 style={{ y: yText }}>
+          {type === "services" ? "What Can I Do?" : "What Have I Done?"}
+        </motion.h1>
+        <motion.img
+          variants={scrollVariants}
+          animate="scrollButton"
+          src="/scroll.png"
+          alt=""
+        />
+      </div>
       <motion.div className="mountains"></motion.div>
       <motion.div
         className="planets"

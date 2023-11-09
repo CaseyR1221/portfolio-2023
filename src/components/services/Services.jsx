@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import "./services.scss";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 
 const variants = {
   initial: {
@@ -22,8 +22,6 @@ const variants = {
 const Services = () => {
   const ref = useRef();
 
-  const isInView = useInView(ref, { margin: "-100px" });
-
   return (
     <motion.div
       className="services"
@@ -42,71 +40,79 @@ const Services = () => {
         <div className="title">
           <img src="/people.webp" alt="" />
           <h1>
-            <motion.b whileHover={{color:"#05F0C5"}}>Dedicated</motion.b> To
+            <motion.b whileHover={{color:"#05F0C5"}}>Technologies</motion.b> I&apos;m
           </h1>
         </div>
         <div className="title">
           <h1>
-            <motion.b whileHover={{color:"#05F0C5"}}>Your</motion.b> Business.
+            <motion.b whileHover={{color:"#05F0C5"}}>Skilled</motion.b> In.
           </h1>
           <button>
-            <a href="#Contact">CONTACT ME</a>
-
+            <a href="#Contact">Contact Me</a>
           </button>
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
         <motion.div
-          className="box"
+          className="box front"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
-          </p>
-          <button>Go</button>
+          <h2>Front-End</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Next.js</li>
+            <li>HandleBars</li>
+          </ul>
         </motion.div>
         <motion.div
-          className="box"
+          className="box back"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
-          </p>
-          <button>Go</button>
+          <h2>Back-End</h2>
+          <ul>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>Java</li>
+            <li>PHP</li>
+            <li>Laravel</li>
+          </ul>
         </motion.div>
         <motion.div
-          className="box"
+          className="box database"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
-          </p>
-          <button>Go</button>
+          <h2>Databases</h2>
+          <ul>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+            <li>PostGSQL</li>
+          </ul>
         </motion.div>
         <motion.div
-          className="box"
+          className="box cms"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
-          </p>
-          <button>Go</button>
+          <h2>CMS</h2>
+          <ul>
+            <li>Wordpress</li>
+            <li>Elementor</li>
+          </ul>
+        </motion.div>
+        <motion.div
+          className="box deployment"
+          whileHover={{ background: "lightgray", color: "black" }}
+        >
+          <h2>Deployment</h2>
+          <ul>
+            <li>Heroku</li>
+            <li>Vercel</li>
+            <li>Netlify</li>
+            <li>AWS</li>
+            <li>Firebase</li>
+          </ul>
         </motion.div>
       </motion.div>
     </motion.div>

@@ -6,27 +6,35 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
   {
     id: 1,
-    title: "React Commerce",
-    img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "addictioncenter.com",
+    img: "/addictioncenter.png",
+    desc: "Informational web guide for those who are struggling with substance use disorders, along with co-occurring behavioral and mental health disorders.",
+    buttonText: "View Site",
+    url: "https://www.addictioncenter.com/",
   },
   {
     id: 2,
-    title: "Next.js Blog",
-    img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Tasty Bytes",
+    img: "/TastyBytes-Logo.jpg",
+    desc: "A Front-End application leveraging HTML, CSS/Bulma, JavaScript, and the Spoonacular API to provide a list of recipes based off of the ingedients that the user has on hand.",
+    buttonText: "View App",
+    url: "https://caseyr1221.github.io/TastyBytes/",
   },
   {
     id: 3,
-    title: "Vanilla JS App",
-    img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Employee Tracker",
+    img: "/Employee-tracker-screenshot.jpeg",
+    desc: "A Back-End command-line application that allows for the creation and tracking of employees, departments, and jobs using Node.js, and MySQL.",
+    buttonText: "See Demo",
+    url: "https://www.youtube.com/watch?v=OIX3NhLKwAc",
   },
   {
     id: 4,
-    title: "Music App",
-    img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Feedback-App",
+    img: "/feedback_ui.png",
+    desc: "A Front-End React.js application that allows the user to leave feedback items via the included form, and displays all items as cards. The Cards are also able to be deleted or updated by the user.",
+    buttonText: "View App",
+    url: "https://magical-bunny-a8bdeb.netlify.app/",
   },
 ];
 
@@ -49,7 +57,15 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{y}}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>See Demo</button>
+            <button>
+              <a 
+                href={item.url}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {item.buttonText}
+              </a>
+            </button>
           </motion.div>
         </div>
       </div>

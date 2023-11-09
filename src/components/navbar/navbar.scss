@@ -25,13 +25,27 @@
       }
     }
 
+    a.nav-contact{
+      padding: 10px;
+      border: 1px solid #05F0C5;
+      border-radius: 5px;
+      background-color: transparent;
+      color: white;
+      cursor: pointer;
+      font-weight: 300;
+
+      @include mobile {
+        display: none;
+      }
+    }
+
     .social {
       display: flex;
       gap: 20px;
 
       img {
-        width: 18px;
-        height: 18px;
+        width: 28px;
+        height: 28px;
       }
     }
   }

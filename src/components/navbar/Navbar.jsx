@@ -7,22 +7,24 @@ const Navbar = () => {
     <div className="navbar">
       <Sidebar/>
       <div className="wrapper">
-        <motion.span
+        <motion.a
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
+          className="nav-contact"
+          href="#Contact"
         >
-          Casey Codes
-        </motion.span>
+          Contact Me
+        </motion.a>
         <div className="social">
-          <a href="#">
-            <img src="/facebook.png" alt="" />
+          <a href="https://github.com/CaseyR1221" target="_blank" rel="noreferrer">
+            <img src="/github.png" alt="" />
           </a>
-          <a href="#">
-            <img src="/instagram.png" alt="" />
+          <a href="https://www.linkedin.com/in/casey-rowlands-0311/" target="_blank" rel="noreferrer">
+            <img src="/linkedin.png" alt="" />
           </a>
-          <a href="#">
-            <img src="/youtube.png" alt="" />
+          <a href="https://www.upwork.com/freelancers/~01ab35c3f9993f78cb" target="_blank" rel="noreferrer">
+            <img src="/upwork2.png" alt="" />
           </a>
         </div>
       </div>
